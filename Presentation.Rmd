@@ -1,0 +1,67 @@
+---
+title: "Developing data products week 3 Assignment (R Markdown Presentation & Plotly)"
+author: "Alemu Molla"
+date: "January 24, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Instructions
+
+Create a web page presentation using R Markdown that features a plot created with Plotly. Host your webpage on either GitHub Pages, RPubs, or NeoCities. Your webpage must contain the date that you created the document, and it must contain a plot created with Plotly. We would love to see you show off your creativity!
+
+## Installing Plotly
+
+Installing Plotly is easy:
+
+```r
+install.packages("plotly")
+library(plotly)
+install.packages("ggplot2"")
+library(ggplot2)
+```
+
+If you want to share your visualizations on https://plot.ly/ you should make an
+account on their site.
+
+
+## Read data sets for visualization
+```r
+Tmtcars<- data.frame(mtcars)
+mtcars$am <- as.factor(mtcars$am)
+transmission<- levels(mtcars$am) <- c("Automatic", "Manual")
+mtcars$cyl<- as.factor(mtcars$cyl)
+```
+
+```{r, eval=FALSE}
+library(plotly)
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter")
+```
+
+## Sample Vizualization
+
+```{r, echo=FALSE, message=FALSE}
+library(plotly)
+plot_ly(mtcars, x = mtcars$wt, y = mtcars$mpg,
+        mode = "markers", color = mtcars$am)
+```
+
+## Scatterplot Sizing
+
+By specifying the `size` argument you can make each point in your scatterplot a
+different size.
+
+```{r, eval=FALSE}
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", 
+        color = ~factor(cyl), size = ~hp)
+```
+
+## Scatterplot Sizing
+
+```{r, echo=FALSE, message=FALSE}
+plot_ly(mtcars, x = ~wt, y = ~mpg, type = "scatter", 
+        color = ~factor(cyl), size = ~hp)
+```
