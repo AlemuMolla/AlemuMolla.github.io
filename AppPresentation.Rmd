@@ -1,0 +1,45 @@
+---
+title: "My Shiny Application and Reproducible Pitch Presentaion"
+author: "Alemu Molla"
+date: "January 25, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+It is possible to give a solution for any body based on his mood. 
+
+## Instruction
+
+- Tell to the app your mood
+- Tell to the app your favorite movie type
+- Submit the button
+
+## Refer and Learn your input
+
+
+- Your feeling is
+
+- and the type of the movie you like is
+
+
+## Suggested Solution
+
+- Then, Here is the solution
+
+- and you can watch this movie
+
+
+
+
+## for further and for detail of my R code please refer in my github page
+
+https://github.com/AlemuMolla/Developing-data-products--Shiny-Application-and-Reproducible-Pitch.git
+
+## Final word
+
+Thank You so much!!
