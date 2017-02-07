@@ -1,0 +1,38 @@
+---
+title: "My app presentaion"
+author: "Alemu Molla"
+date: "February 6, 2017"
+output: ioslides_presentation
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+Word cloud is an image composed of words used in a particular text or subject, in which the size of each word indicates its frequency or importance.
+
+
+## Importance of word cloud
+
+A tag cloud (word cloud, or weighted list in visual design) is a visual representation of text data, typically used to depict keyword metadata (tags) on websites, or to visualize free form text. Tags are usually single words, and the importance of each tag is shown with font size or color.
+
+## Steps
+
+
+- Choose the source form dropdown list
+- If you wan to change the source you can select and click change (infact I don't have any dataset for Source 2 and Source 3)
+
+
+## Output
+
+- Then, the app will give you a word cloud. You can use the slide bar to incrise and decrease the size of word cloud based on frequency or word occurenses
+
+for further and for detail of my R code please click bellow link
+
+https://alemumolla.shinyapps.io/shiny-application-and-reproducible-pitch/
+
+Thank you!
+
